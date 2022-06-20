@@ -1,2 +1,0 @@
-lat a
-let bgggclear

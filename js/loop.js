@@ -62,31 +62,76 @@ let x = 1
     const arrVal = Object.values(obj);
     console.log(arrVal)
 
-    for(i=0; i < arrVal.length; i++ ) {
-      if(typeof(arrVal[i] === "number")){
-        if(arrVal[i] < 18){
-          console.log("tinager")
-          break
-        }
+for(i=0; i < arrVal.length; i++ ) {
+  if(typeof(arrVal[i] === "number")){
+    if(arrVal[i] < 18){
+      console.log("tinager")
+        break
       }
+  }
 
-    };
+};
 
     let testArrIndex = 0
-
-
-
-
-
-
-    
 
 for(i = 0; i< testarr.length; i++){
   console.log(testarr[i] + `-${testArrIndex ++}`)
  
 };
 
- 
- 
+for(i = 0; i< testarr.length; i++){
+  
 
+ 
+};
+
+let someText = "";
+
+for (let i = 0; i < 10; i++) {
+
+  if (i === 3) { continue; }
+  someText = "The number is " + i;
+  console.log(someText);
+
+};
+
+const carTradeMarks = ["Mercedes","bmw","great wall","ferrari","lamborghini","FORD"];
+const carModels = ["e36","Slr","maranello","raptor","huracan","hover"];
+
+
+
+for(i = 0; i < carTradeMarks.length ; i++){
+
+  if(carTradeMarks[i] === "Mercedes"){
+     let mark = carTradeMarks[i]
+     for(x = 0; x < carModels.length ; x++)
+     if(carModels[x] === "Slr"){
+     let model = carModels[x]
+     console.log(`${mark}- ${model}` )
+    };   
+}else if(carTradeMarks[i] === "FORD"){
+  let mark = carTradeMarks[i]
+  for(x = 0; x < carModels.length ; x++)
+  if(carModels[x] === "raptor"){
+   let model = carModels[x]
+  console.log(`${mark}- ${model}` )
+  };  
+}else if(carTradeMarks[i] === "lamborghini"){
+  let mark = carTradeMarks[i]
+  for(x = 0; x < carModels.length ; x++)
+  if(carModels[x] === "huracan"){
+   let model = carModels[x]
+  console.log(`${mark}- ${model}` )
+  };  
+};
+
+};
+ 
+let l = 20;
+let num = 1;
+do{ 
+
+  console.log("loop" + num++ )
+  l++
+}while( l > 20 && l < 30)
 
